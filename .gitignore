@@ -1,0 +1,16 @@
+# Ignore Terraform's local working directory (plugins and cache)
+.terraform/
+
+# Ignore local state files (they contain plain-text secrets)
+*.tfstate
+*.tfstate.*
+*.tfstate.lock.info
+
+# Ignore generated execution plans
+*.tfplan
+
+# Ignore private variable files (where you put passwords and keys)
+# Note: Rename your safe files to 'dev.tfvars' if you want to commit them, 
+# but keep actual secrets out of them.
+secret*.tfvars
+*.secret.tfvars
